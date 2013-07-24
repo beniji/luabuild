@@ -16,6 +16,7 @@ M["luasql.odbc"] = "luasql/src"
 
 bc="bc"
 
+rex_pcre = "lrexlib/src"
 
 
 

@@ -1,0 +1,8 @@
+local defines = 'VERSION=\\"2.7.2\\"'
+
+return luabuild.library {
+    'rex_pcre',
+	src='common pcre/lpcre pcre/lpcre_f',
+    libs='pcre',
+    defines = defines,
+}
