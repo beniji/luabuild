@@ -239,7 +239,7 @@ find = {}
 if Windows then
     SYS_PREFIX = ''
 else
-    SYS_PREFIX = {'/usr','/usr/share','/usr/local'}
+    SYS_PREFIX = {'/usr','/usr/share','/usr/local','/opt/local'}
 end
 
 function find.include_path(candidates)
@@ -2649,6 +2649,7 @@ local function examine_config_vars(package,subtype)
     --
     -- If this check fails, then Lake can generate skeleton configuration files for
     -- the needs.
+    print ('*** package' .. package)
     local upack = package:upper():gsub('%W','_')
     local incdir_v = upack..'_INCLUDE_DIR'
     local libdir_v = upack..'_LIB_DIR'
