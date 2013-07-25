@@ -7,8 +7,9 @@ end
 local incdir = path.splitpath(header)
 
 return luabuild.library { 'rex_pcre',
-  src='common pcre/lpcre pcre/lpcre_f',
-  libs='pcre',
+  src = 'common pcre/lpcre pcre/lpcre_f',
+  libs = 'pcre',
   defines = defines,
-  incdir = incdir
+  incdir = incdir,
+  lang = 'c99'
 }
