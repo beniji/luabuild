@@ -74,7 +74,7 @@ void freelist_init (TFreeList *fl);
 void freelist_add (TFreeList *fl, TBuffer *buf);
 void freelist_free (TFreeList *fl);
 
-void buffer_init (TBuffer *buf, size_t sz, lua_State *L, TFreeList *fl);
+static void buffer_init (TBuffer *buf, size_t sz, lua_State *L, TFreeList *fl);
 void buffer_free (TBuffer *buf);
 void buffer_clear (TBuffer *buf);
 void buffer_addbuffer (TBuffer *trg, TBuffer *src);
