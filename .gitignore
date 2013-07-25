@@ -5,5 +5,11 @@ lib/
 bin/
 lua/
 test/
-
+_t_.spec
+current_modules
+lakefile.spec
+lua-5.2.2/config.h
+lua-5.2.2/linit.c
+lua52.tests
+lua52s.tests
 
