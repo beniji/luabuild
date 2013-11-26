@@ -12,4 +12,4 @@ lua-5.2.2/config.h
 lua-5.2.2/linit.c
 lua52.tests
 lua52s.tests
-
+lua.tests
